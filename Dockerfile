@@ -19,7 +19,7 @@ FROM openjdk:17
 WORKDIR /app
  
 # Copy the built jar file from the build stage
-COPY --from=builder /app/target/*.jar demo.jar
+COPY --from=builder /app/target/*.war movie-rest-api.war
  
 # Expose the application port
 EXPOSE 9093:8080
