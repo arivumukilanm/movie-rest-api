@@ -25,4 +25,4 @@ COPY --from=builder /app/target/*.war movie-rest-api.war
 EXPOSE 9093:8080
  
 # Define the entrypoint to run the application
-ENTRYPOINT ["java", "-jar", "demo.jar"]
+ENTRYPOINT ["java", "-jar", "movie-rest-api.war"]
